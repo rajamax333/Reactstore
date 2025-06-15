@@ -1,7 +1,8 @@
 @use '../../styles/variable' as *;
 
 .productDetails {
-  max-width: 500px;
+  max-width: 400px;
+  height: fit-content;
   margin: 2rem auto;
   padding: 2rem;
   background: #fff;
@@ -110,4 +111,14 @@
   margin-top: 2rem;
   font-size: 1.2rem;
   color: #888;
+}
+
+@media (max-width: 768px) {
+  .productDetails {
+    padding: 0.2rem;
+    margin-top:10px;
+    width: 70%;
+    height: fit-content;
+    overflow: auto;
+  }
 }
