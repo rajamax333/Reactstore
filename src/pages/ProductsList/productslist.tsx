@@ -35,7 +35,7 @@ function ProductsList() {
 
   const { data: allProducts = [], isLoading, isError } = useQuery<Product[]>({
     queryKey,
-    queryFn: () => fetchProducts(categories, params),
+    queryFn: () => fetchProducts(params),
     enabled: hasMore,
   });
 
