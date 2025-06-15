@@ -1,0 +1,20 @@
+.userCardContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  & > figure {
+    margin: 0;
+    & > img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+  }
+
+&>span {
+  flex-grow: 1;
+  display: block;
+}
+
+}

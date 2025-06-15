@@ -1,0 +1,35 @@
+@use '../../styles/variable.scss';
+@use '../../styles/mixins';
+
+.filterContainer {
+  border-right: variable.$default-border;
+  width: 86%;
+  height: 100%;
+  min-width: 180px;
+  padding: 1rem;
+  max-height: 100%;
+  overflow: auto;
+  @include mixins.flex-column;
+  gap: 1.5rem;
+  .minMaxContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    & > div {
+      width: 48%;
+    }
+  }
+   & > section {
+      border-bottom: variable.$default-border ;
+      padding-bottom: 1rem;
+   }
+}
+
+@media (max-width: 780px) {
+
+  .filterContainer {
+    width: fit-content;
+    border-right: none;
+    height: fit-content;
+  }
+}
