@@ -1,4 +1,4 @@
-import React from 'react'
+
 import useFilter from '../../hooks/useFilterHook/usefilter';
 
 function Resetbtn() {

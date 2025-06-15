@@ -1,5 +1,4 @@
 // Loader.tsx
-import React from 'react';
 import './skeleton.module.scss';
 
 const Loader = () => {

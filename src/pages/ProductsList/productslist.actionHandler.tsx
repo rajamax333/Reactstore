@@ -8,7 +8,6 @@ interface FetchProductsParams {
 }
 
 export const fetchProducts = async (
-  categories: FetchProductsParams['categories'],
   params: FetchProductsParams['params'],
 ): Promise<Product[]> => {
   try {
